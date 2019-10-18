@@ -1,0 +1,215 @@
+<div *ngIf="show">
+  <div class="container0">
+    <div class="overlay">
+      <img class="image" src="https://icon-library.net/images/cart-icon-png-white/cart-icon-png-white-0.jpg" width="75px" (click)="showCart()">
+    </div>
+  </div>
+
+<ng-container *ngIf="cartView">
+  <ng-container *ngIf="model1">
+    <div class="overlay3">
+      <br>
+      <img src="https://pictures.topspeed.com/IMG/jpg/201812/porsche-launches-the-6.jpg" width="75%">
+      <p> The Porsche Cayman </p>
+      <p> $56,900 </p>
+
+      <form action="/action_page.php" method="get" target="_blank" >
+        First name: <input type="text" name="fname" placeholder="John"><br><br>
+        Last name: <input type="text" name="lname" placeholder="Doe"><br><br>
+        Address: <input type="text" name="adrs" placeholder="999 Broadway Blv"><br><br>
+        Billing Adress: <input type="text" name="bAdrs" placeholder="111 Broadway Blv"><br><br>
+        Credit Card Type: <input type="text" name="crd" placeholder="Amex, Chase, Bank of America"><br><br>
+        Credit Card Number: <input type="text" name="cNum" placeholder="123-456-789-123"><br><br>
+        Finance:<select name="finance">
+          <option value="12">12-Month</option>
+          <option value="24">24-Month</option>
+          <option value="36">36-Month</option>
+          <option value="48">48-Month</option>
+        </select><br><br>
+        <button class="button buttonBlue" (click)="purchase()">Buy</button>
+      </form>
+    </div>
+  </ng-container>
+  <ng-container *ngIf="model2">
+    <div class="overlay3">
+      <div class="overlay3">
+      <br>
+      <img src="https://static.carsdn.co/cldstatic/wp-content/uploads/P19_0546_a3_rgb.jpg" width="75%">
+      <p> The Porsche Cayman S </p>
+      <p> $69,300 </p>
+
+      <form action="/action_page.php" method="get" target="_blank" >
+        First name: <input type="text" name="fname" placeholder="John"><br><br>
+        Last name: <input type="text" name="lname" placeholder="Doe"><br><br>
+        Address: <input type="text" name="adrs" placeholder="999 Broadway Blv"><br><br>
+        Billing Adress: <input type="text" name="bAdrs" placeholder="111 Broadway Blv"><br><br>
+        Credit Card Type: <input type="text" name="crd" placeholder="Amex, Chase, Bank of America"><br><br>
+        Credit Card Number: <input type="text" name="cNum" placeholder="123-456-789-123"><br><br>
+        Finance:<select name="finance">
+          <option value="12">12-Month</option>
+          <option value="24">24-Month</option>
+          <option value="36">36-Month</option>
+          <option value="48">48-Month</option>
+        </select><br><br>
+        <button class="button buttonBlue" (click)="purchase()">Buy</button>
+      </form>
+    </div>
+    </div>
+  </ng-container>
+  <ng-container *ngIf="model3">
+    <div class="overlay3">
+      <div class="overlay3">
+      <div class="overlay3">
+      <br>
+      <img src="https://cdn.gearpatrol.com/wp-content/uploads/2019/10/2020-Porsche-Taycan-Turbo-S-gear-patrol-lead-slide-6-1940x1300.jpg" width="75%">
+      <p> The Porsche Taycan Turbo </p>
+      <p> $150,900 </p>
+
+      <form action="/action_page.php" method="get" target="_blank" >
+        First name: <input type="text" name="fname" placeholder="John"><br><br>
+        Last name: <input type="text" name="lname" placeholder="Doe"><br><br>
+        Address: <input type="text" name="adrs" placeholder="999 Broadway Blv"><br><br>
+        Billing Adress: <input type="text" name="bAdrs" placeholder="111 Broadway Blv"><br><br>
+        Credit Card Type: <input type="text" name="crd" placeholder="Amex, Chase, Bank of America"><br><br>
+        Credit Card Number: <input type="text" name="cNum" placeholder="123-456-789-123"><br><br>
+        Finance:<select name="finance">
+          <option value="12">12-Month</option>
+          <option value="24">24-Month</option>
+          <option value="36">36-Month</option>
+          <option value="48">48-Month</option>
+        </select><br><br>
+        <button class="button buttonBlue" (click)="purchase()">Buy</button>
+      </form>
+    </div>
+    </div>
+    </div>
+  </ng-container>
+</ng-container>
+</div>
+
+
+
+
+
+
+<div *ngFor="let product of products; index as productId">
+  <div *ngIf="!show">
+    <h3>
+      {{ product.name }}
+   </h3>
+    <span title="{{ product.name }}">
+         <img src="{{ product.mainImage }}">
+    </span>
+    <p>
+     {{ product.price }}
+    </p>
+   <div class="wrapper">
+     <button (click)="buy(productId)">
+       <p></p>
+         Buy the {{ product.name }}
+      <p></p>
+     </button>
+   </div>
+  </div>
+</div>
+
+
+
+
+
+<ng-container *ngIf="show">
+  <button class="button buttonBlue"(click)="toggle()">
+       Models
+  </button>
+  <br>
+  <ng-container *ngIf="model1">
+    <img src="https://www.porsche-mania.com/wp-content/gallery/2013-porsche-cayman-wallpapers/2013-porsche-cayman-wallpaper_06.jpg" width="75%">
+    <p>The Porsche Cayman are mid-engined two-seater cars manufactured and marketed by German automobile manufacturer Porsche across four generations and a 3-door, 2-seater fastback coupé.</p>
+    <p>$56,900</p>
+    <ng-container *ngIf="!compare">
+      <button class="compareProd" (click)="compareModels()"><u>+ Compare Models</u></button>
+    </ng-container>
+
+    <ng-container *ngIf="compare">
+      <button class="compareProd" (click)="compareModels()"><u>- Compare Models</u></button>
+      <div class="overlay2">
+        <img src="https://pipestry.com/wp-content/uploads/2019/01/gif-bounce-arrow.gif" width="100">
+      </div>
+    </ng-container>
+
+  </ng-container>
+
+  <ng-container *ngIf="model2">
+    <img src="https://free4kwallpapers.com/uploads/originals/2016/05/10/porsche-718-cayman-4k-wallpaper.jpg" width="75%">
+    <p>The Porsche Cayman S are mid-engined two-seater sports cars manufactured and marketed by German automobile manufacturer Porsche across four generations and a 3-door, 2-seater fastback coupé.</p>
+    <p>$69,300</p>
+    <ng-container *ngIf="!compare">
+      <button class="compareProd" (click)="compareModels()"><u>+ Compare Models</u></button>
+    </ng-container>
+
+    <ng-container *ngIf="compare">
+      <button class="compareProd" (click)="compareModels()"><u>- Compare Models</u></button>
+      <div class="overlay2">
+        <img src="https://pipestry.com/wp-content/uploads/2019/01/gif-bounce-arrow.gif" width="100">
+      </div>
+    </ng-container>
+
+  </ng-container>
+
+  <ng-container *ngIf="model3">
+    <img src="https://cdn.motor1.com/images/mgl/QEmQB/s1/2020-porsche-taycan.jpg" width="75%">
+    <p>The Taycan uses a new battery-electric drivetrain consisting of a permanent-magnetic synchronous motor on each axle, allowing the car to have an all-wheel drive layout. At the front, power is sent to the wheels through a single-speed gearbox.</p>
+    <p>$150,900</p>
+    <ng-container *ngIf="!compare">
+      <button class="compareProd" (click)="compareModels()"><u>+ Compare Models</u></button>
+    </ng-container>
+
+    <ng-container *ngIf="compare">
+      <button class="compareProd" (click)="compareModels()"><u>- Compare Models</u></button>
+      <div class="overlay2">
+        <img src="https://pipestry.com/wp-content/uploads/2019/01/gif-bounce-arrow.gif" width="100">
+      </div>
+    </ng-container>
+
+  </ng-container>
+
+  <ng-container *ngIf="compare"> 
+
+    <TABLE WIDTH="100%"  CELLSPACING="3">
+      <TR>
+        <TH COLSPAN="3"><BR><H3>Compare Models</H3>
+        </TH>
+      </TR>
+      <TR>
+        <ng-container *ngFor="let product of products; index as productId">
+            <TH>{{ product.name }} <button class="button" (click)="toggle()"><img src="{{ product.mainImage }}"></button></TH>
+        </ng-container>
+      </TR>
+      <TR ALIGN="CENTER">
+        <ng-container *ngFor="let product of products; index as productId">
+          <TD>MSRP: {{ product.price }}</TD>
+        </ng-container>
+      </TR>
+      <TR ALIGN="CENTER">
+        <ng-container *ngFor="let product of products; index as productId">
+          <TD>MAX. Power: {{ product.horsepower }}</TD>
+        </ng-container>
+      </TR>
+      <TR ALIGN="CENTER">
+        <ng-container *ngFor="let product of products; index as productId">
+          <TD>0-60 with Sport Package: {{ product.speed }}</TD>
+        </ng-container>
+      </TR>
+      <TR ALIGN="CENTER">
+        <ng-container *ngFor="let product of products; index as productId">
+          <TD>Top Speed: {{ product.topSpeed }}</TD>
+        </ng-container>
+      </TR>
+      
+    </TABLE>
+
+  </ng-container>
+    <br>
+    <button class="button buttonBlue" (click)="showCart()">Buy</button>
+</ng-container>
+

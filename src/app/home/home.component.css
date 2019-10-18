@@ -1,0 +1,86 @@
+.column {
+  float: left;
+  width: 2%;
+  padding: 5px;
+}
+
+.btn {
+    background-color: white;
+    cursor:pointer;
+    width: 100%
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+.overlay2 {
+  position: absolute;
+  top: 95%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.text {
+  color: white;
+  font-size: 50px;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  -webkit-transform: translate(50%, 50%);
+  -ms-transform: translate(50%, 50%);
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+
+.text1-1 {
+  font-size: 50px;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  -webkit-transform: translate(50%, 50%);
+  -ms-transform: translate(50%, 50%);
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+  color: rgb(0, 0, 0);
+}
+
+.top-left {
+  position: absolute;
+  top: 12px;
+  left: 13px;
+  cursor: pointer;
+}
+
+.carouselOverlay1 {
+  position: absolute;
+  background-color: #00001150;
+  color: #ffff;
+  top: 55%;
+  left: 5%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  border: none;
+}
+
+.carouselOverlay2 {
+  position: absolute;
+  background-color: #00001150;
+  color: #ffff;
+  top: 55%;
+  left: 95%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  border: none;
+}

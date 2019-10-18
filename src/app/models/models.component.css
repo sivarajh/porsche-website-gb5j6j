@@ -1,0 +1,64 @@
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.btn {
+  width: 25px;
+  height: 25px;
+  background-color:blue;
+  cursor:pointer;
+  font-size: 15px;
+}
+
+.button {
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.buttonBlue {background-color: #008CBA;}
+
+.compareProd {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.overlay {
+  position: absolute;
+  top: 8%;
+  left: 92.5%;
+  transform: translate(-50%, -50%);
+}
+
+.overlay2 {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.overlay3 {
+  position: absolute;
+  top: 80;
+  height: 1200px;
+  width: 100%;
+  background-color: whitesmoke;
+}

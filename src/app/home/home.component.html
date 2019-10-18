@@ -1,0 +1,89 @@
+<div class="container">
+  <app-top-porshe-logo></app-top-porshe-logo>
+  <div class="top-left"><button (click)="home()"><img src="https://di-uploads-pod3.dealerinspire.com/porscheoffremont/uploads/2018/09/porsche-logo.jpg" width="190px"></button></div>
+</div>
+
+
+<ng-container *ngIf="!show">
+  <ng-container *ngIf="url1">
+    <div class="container">
+      <button class="btn" (click)="toggle()">
+      <img src="https://cdnsecakmi.kaltura.com/p/1807801/sp/180780100/thumbnail/entry_id/0_74gy6n61/version/100012/def_height/960/def_width/1280" width="100%" class="image">
+      </button>
+      <div class="overlay">
+        <div class="text">Porsche Cayenne</div>
+      </div>
+    </div>
+    <div class="overlay2">
+      <img src="https://pipestry.com/wp-content/uploads/2019/01/gif-bounce-arrow.gif" width="100">
+    </div>
+  </ng-container>
+
+  <ng-container *ngIf="url2">
+    <div class="container">
+      <button class="btn" (click)="toggle()">
+      <img src="https://wallpapershome.com/images/wallpapers/porsche-718-cayman-gts-3840x2160-2019-cars-4k-18588.jpg" width="100%" class="image">
+      </button>
+      <div class="overlay">
+        <div class="text1-1">Porsche 718 Cayman GTS</div>
+      </div>
+    </div>
+    <div class="overlay2">
+      <img src="https://pipestry.com/wp-content/uploads/2019/01/gif-bounce-arrow.gif" width="100">
+    </div>
+  </ng-container>
+
+  <ng-container *ngIf="url3">
+    <div class="container">
+      <button class="btn" (click)="toggle()">
+      <img src="https://wallpapersite.com/images/wallpapers/porsche-panamera-turbo-sport-turismo-3600x2025-2018-hd-6600.jpeg" width="100%"  class="image">
+      </button>
+      <div class="overlay">
+        <div class="text1-1">Porsche Panamera Turbo Sport</div>
+      </div>
+    </div>
+    <div class="overlay2">
+      <img src="https://pipestry.com/wp-content/uploads/2019/01/gif-bounce-arrow.gif" width="100">
+    </div>
+  </ng-container>
+
+  <button class="carouselOverlay1" (click)="prev()"><</button>
+  <button class="carouselOverlay2" (click)="next()">></button>
+</ng-container>
+
+
+
+
+
+
+
+  
+
+
+  <ng-container *ngIf="show">
+      <app-models> </app-models>
+   </ng-container>
+
+<ng-container *ngIf="!show">
+  <button class="btn" (click)="toggle()">
+    <span title="Porsche 718 Boxter">
+      <img src="https://files1.porsche.com/filestore/image/usa/en-us/model-series-718-Boxster-Intro/normal/14d83ec6-6772-11e9-80c4-005056bbdc38/porsche-normal.jpg" width="49%">
+    </span>
+
+    <img src="https://www.publicdomainpictures.net/download-picture.php?id=28763&check=40d0c7d2a335794339b3a2023655e58f" width="2%">
+
+    <span title="Porsche 911 Coupè">
+      <img src="https://cdn1.autoexpress.co.uk/sites/autoexpressuk/files/styles/article_main_image/public/2019/01/08_22.jpg?itok=NEcdgz1-" width="49%">
+    </span>
+
+    <span title="Porsche 711 Taycan">
+      <img src="https://www.electrive.com/wp-content/uploads/2019/09/porsche-taycan-2019-002-min.png" width="49%">
+    </span>
+  
+    <img src="https://www.publicdomainpictures.net/download-picture.php?id=28763&check=40d0c7d2a335794339b3a2023655e58f" width="2%">
+
+    <span title="Porsche 911 GT4">
+      <img src="https://newsroom.porsche.com/image/image_1080x624/e60f9c33-d909-40af-a340-d18fea8aba80.jpg" width="49%">
+    </span>
+  </button>
+</ng-container>

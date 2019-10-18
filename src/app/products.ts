@@ -1,0 +1,32 @@
+export const products = [
+  {
+    name: '718 Cayman',
+    mainImage: 'https://files1.porsche.com/filestore/image/multimedia/none/jdp-2016-982-718-c7-modelimage-sideshot/thumbwhite/d3b4f82a-3356-11e8-bbc5-0019999cd470;sB;twebp/porsche-thumbwhite.webp',
+    price: '$56,900.00',
+    description: 'The Porsche Cayman are mid-engined two-seater cars manufactured and marketed by German automobile manufacturer Porsche across four generations and a 3-door, 2-seater fastback coupé.',
+    descriptionImage: 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/high-718-cayman-gts-ascari-2017-porsche-ag-1524665294.jpg?resize=480:*',
+    horsepower: '300',
+    speed: '4.9s',
+    topSpeed: '170 MPH',
+  },
+  {
+    name: '718 Cayman S',
+    mainImage: 'https://files1.porsche.com/filestore/image/multimedia/none/jdp-2016-982-718-c7s-modelimage-sideshot/thumbwhite/3d15bd1f-970a-11e6-9f1b-0019999cd470;sB;twebp/porsche-thumbwhite.webp',
+    price: '$69,300.00',
+    description: 'The Porsche Cayman S are mid-engined two-seater sports cars manufactured and marketed by German automobile manufacturer Porsche across four generations and a 3-door, 2-seater fastback coupé.',
+    descriptionImage: 'http://hdqwalls.com/wallpapers/porsche-cayman-s-sv.jpg',
+    horsepower: '350',
+    speed: '4.4s',
+    topSpeed: '177 MPH',
+  },
+  {
+    name: '718 Taycan Turbo',
+    mainImage: 'https://files1.porsche.com/filestore/image/multimedia/none/j1-taycan-tu-modelimage-sideshot/thumbwhite/bd1c55ec-ac7b-11e9-80c4-005056bbdc38;sB;twebp/porsche-thumbwhite.webp',
+    price: '$150,900.00',
+    description: 'The Taycan uses a new battery-electric drivetrain consisting of a permanent-magnetic synchronous motor on each axle, allowing the car to have an all-wheel drive layout. At the front, power is sent to the wheels through a single-speed gearbox.',
+    descriptionImage: 'https://cdn.motor1.com/images/mgl/kJWEN/s1/2020-porsche-taycan.jpg',
+    horsepower: '750',
+    speed: '3.0s',
+    topSpeed: '161 MPH',
+  },
+]
